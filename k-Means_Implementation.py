@@ -75,8 +75,10 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # set up environment
-    max_k = int(sys.argv[1])
-    data_file = sys.argv[2]
+    #max_k = int(sys.argv[1])
+    #data_file = sys.argv[2]
+    max_k=10
+    data_file='/home/aadarsh/PycharmProjects/python_project/kdd-cup-99-spark-master/kddcup.data_10_percent_corrected'
     conf = SparkConf().setAppName("KDDCup99")
 
     sc = SparkContext(conf=conf)
